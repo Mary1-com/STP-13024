@@ -15,11 +15,6 @@
     box-shadow 250ms ease;
 }
 
-/* .header.is-scrolled {
-  background-color: rgba(57, 159, 224, 0.96);
-  box-shadow: 0 8px 24px rgba(0, 56, 120, 0.16);
-} */
-
 .header[data-scrolled='true'] {
   background-color: rgba(57, 159, 224, 0.96);
   box-shadow: 0 8px 24px rgba(0, 56, 120, 0.16);
@@ -123,13 +118,6 @@
     opacity 250ms ease,
     visibility 250ms ease;
 }
-
-/* .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-} */
-
 
 .mobile-menu__panel {
   position: absolute;
