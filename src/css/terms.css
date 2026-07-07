@@ -1,6 +1,5 @@
 .terms {
-    min-height: 100vh;
-  /* padding: 44px 0 40px; */
+  min-height: 100vh;
   padding: 158px 16px 40px;
   min-height: 100vh;
   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
@@ -10,6 +9,7 @@
   width: 100%;
   max-width: 335px;
   margin: 0 auto;
+   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
 .back-home {
@@ -47,9 +47,8 @@
   margin: 0 0 16px;
 
   text-align: center;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 28px;
   color: #0b0e14;
 }
 
@@ -68,6 +67,7 @@
   font-weight: 400;
 }
 
+
 .terms ul {
   margin: 0 0 12px;
   padding-left: 14px;
@@ -78,13 +78,13 @@
 }
 
 .policy-page .footer {
-  background-color: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
+  background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
 .policy-page .footer__container {
   padding: 16px 25px;
   min-height: 103px;
-  background-color: transparent;
+  background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
 .policy-page .footer__content,
@@ -94,4 +94,63 @@
 
 .policy-page .footer__nav {
   margin: 0 auto;
+}
+
+.policy-page .footer__bottom {
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .terms {
+    padding: 120px 0 85px;
+    background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
+    margin-top: 0;
+  }
+
+  .terms .container {
+    max-width: 1280px;
+  }
+
+  .back-home {
+    gap: 16px;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
+
+  .back-home__icon {
+    width: 46px;
+    height: 46px;
+  }
+
+.back-home__text {
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.9;
+}
+
+.terms-title {
+    margin-bottom: 48px;
+    font-size: 36px;
+    font-weight: 700;
+
+  }
+
+  .pre-title {
+    font-size: 16x;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2d3436;
+
+  }
+
+  .terms p,
+  .terms li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2d3436;
+    line-height: 1.45;
+  }
 }
