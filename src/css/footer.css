@@ -11,7 +11,7 @@
   max-width: 375px;
   min-height: 347px;
   margin: 0 auto;
-  padding: 28px 20px 24px;
+  padding: 32px 25px;
 
   display: flex;
   flex-direction: column;
@@ -154,10 +154,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
 
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .footer__link {
@@ -168,6 +168,16 @@
   text-decoration: none;
   white-space: nowrap;
 }
+
+.footer__copy {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #0b0e14;
+  margin-top: 0;
+}
+
+
 
 .footer__divider {
   display: block;
@@ -195,7 +205,7 @@
     min-height: auto;
     height: auto;
 
-    padding: 61px 0 30px;
+    padding: 61px 0 16px;
 
     display: grid;
     grid-template-columns: 1fr auto;
