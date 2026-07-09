@@ -1,6 +1,7 @@
 .gallery {
   padding-bottom: 35px;
   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
+  scroll-margin-top: 60px;
 }
 
 .gallery_container {
@@ -93,6 +94,7 @@ gap: 32px;
 
   .gallery {
     padding-bottom: 120px;
+     scroll-margin-top: 90px;
   }
 
   .gallery_container {
@@ -124,4 +126,6 @@ margin: 0 auto;
   display: none !important;
   content: "" !important;
 }
+
+
 }
