@@ -5,27 +5,36 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-new Swiper('.mySwiper', {
-  modules: [Pagination, Navigation],
+const swiperElem = document.querySelector('#gallery-swiper');
+if (swiperElem) {
 
-  slidesPerView: 1,
-  spaceBetween: 24,
-  loop: true,
+  const paginationSelector = swiperElem.dataset.pagination;
+  const nextSelector = swiperElem.dataset.next;
+  const prevSelector = swiperElem.dataset.prev;
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
 
-  navigation: {
-    nextEl: '.my-gallery-next',
-    prevEl: '.my-gallery-prev',
-  },
+  new Swiper(swiperElem, {
+    modules: [Pagination, Navigation],
 
-  breakpoints: {
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+
+    pagination: {
+      el: paginationSelector,
+      clickable: true,
     },
-  },
-});
+
+    navigation: {
+      nextEl: nextSelector,
+      prevEl: prevSelector,
+    },
+
+    breakpoints: {
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
