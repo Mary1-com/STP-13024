@@ -68,6 +68,10 @@
   content: none !important;
 }
 
+.swiper {
+  --swiper-pagination-color: #2D3436;
+}
+
 
       @media screen and (min-width: 1440px) {
   .container {
