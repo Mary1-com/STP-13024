@@ -5,7 +5,9 @@
   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
-
+.img {
+  border-radius: 20px;
+}
 
 
 .all-img-container {
