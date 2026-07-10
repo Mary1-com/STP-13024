@@ -24,6 +24,8 @@
   line-height: 1.2;
   color: #14283a;
   text-decoration: none;
+
+  transition: color 200ms ease;
 }
 
 .back-home__icon {
@@ -31,31 +33,27 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
+
+  color: currentColor;
+  fill: currentColor;
 }
 
 .back-home__text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 18px;
-
   line-height: 2.56;
   text-align: center;
+
+  color: currentColor;
 }
 
 .back-home:hover,
-.back-home:focus,
-.back-home__icon:hover,
-.back-home__icon:focus,
-.back-home__text:hover,
-.back-home__text:focus {
-  fill: var(--glow);
+.back-home:focus {
   color: var(--glow);
 }
 
-.back-home:active,
-.back-home__icon:active,
-.back-home__text:active {
-  fill: var(--pressed);
+.back-home:active {
   color: var(--pressed);
 }
 
@@ -159,7 +157,6 @@ h2 {
   }
 
   .pre-title {
-    font-size: 16x;
     font-weight: 600;
     font-size: 16px;
     color: #2d3436;
@@ -173,4 +170,39 @@ h2 {
     color: #2d3436;
     line-height: 1.45;
   }
+}
+
+.back-home {
+  color: #14283a;
+}
+
+.back-home__icon,
+.back-home__text {
+  pointer-events: none;
+  color: inherit;
+  fill: currentColor;
+  transition: color 200ms ease, fill 200ms ease;
+}
+
+.back-home:hover,
+.back-home:focus {
+  color: var(--glow);
+}
+
+.back-home:hover .back-home__icon,
+.back-home:focus .back-home__icon,
+.back-home:hover .back-home__text,
+.back-home:focus .back-home__text {
+  color: var(--glow);
+  fill: currentColor;
+}
+
+.back-home:active {
+  color: var(--pressed);
+}
+
+.back-home:active .back-home__icon,
+.back-home:active .back-home__text {
+  color: var(--pressed);
+  fill: currentColor;
 }

@@ -205,16 +205,18 @@
   margin-top: 0;
 }
 
-
-
 .footer__divider {
   display: block;
   flex-shrink: 0;
 
   width: 1px;
   height: 20px;
-
   background-color: #111111;
+}
+
+html.privacy-page .footer__link--privacy:not(:hover):not(:focus):not(:active),
+html.terms-page .footer__link--terms:not(:hover):not(:focus):not(:active) {
+  color: var(--pressed);
 }
 
 /* Desktop 1440px */
