@@ -267,9 +267,18 @@
       transform 200ms ease;
   }
 
-  .hero__play:hover,
-  .hero__play:focus {
-    background-color: #9fe452;
+  .footer__play:hover,
+  .footer__play:focus {
+    background-color: var(--glow);
+    color: var(--text-heading);
+    border-color: var(--glow);
+  }
+
+  .footer__play:active {
+    background-color: var(--primary);
+    color: var(--text-heading);
+    border-color: var(--primary);
+    transform: translateY(0);
   }
 
   .footer__nav {

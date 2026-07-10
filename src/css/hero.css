@@ -89,10 +89,17 @@
   background-color:#f7f9fc;
 }
 
-.hero__star {
-  width: 16px;
-  height: 16px;
-}
+  .hero__star {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+
+    color: var(--primary);
+    fill: currentColor;
+
+    vertical-align: -2px;
+  }
 
 .hero__stat:nth-child(1) {
   width: 77px;
@@ -282,13 +289,17 @@
 
   .hero__play:hover,
   .hero__play:focus {
-    background-color: #9fe452;
+    background-color: var(--glow);
+    color: var(--text-heading);
+    border-color: var(--glow);
   }
 
-  .hero__play:active {
-    background: var(--text-heading);
+  .header__play:active {
+    background-color: var(--primary);
+    color: var(--text-heading);
+    border-color: var(--primary);
+    transform: translateY(0);
   }
-
 
   .hero__play-icon {
     display: block;
@@ -313,11 +324,6 @@
     padding: 10px 14px;
   }
 
-  .hero__star {
-    width: 16px;
-    height: 16px;
-  }
-
   .hero__stat-value {
     display: flex;
     align-items: center;
@@ -337,7 +343,7 @@
     width: auto;
   }
 
-   .hero__stat-label {
+  .hero__stat-label {
     font-weight: 700;
     font-size: 16px;
     color: var(--text-main);

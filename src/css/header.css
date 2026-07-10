@@ -459,11 +459,16 @@ body[data-menu-open='true'] {
 
 .header__play:hover,
 .header__play:focus {
-  background-color: #9fe452;
+  background-color: var(--glow);
+  color: var(--text-heading);
+  border-color: var(--glow);
 }
 
 .header__play:active {
-background: var(--text-heading);
+  background-color: var(--primary);
+  color: var(--text-heading);
+  border-color: var(--primary);
+  transform: translateY(0);
 }
 
 
