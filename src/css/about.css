@@ -1,7 +1,7 @@
 .about {
   width: 375px;
   padding: 0;
-
+  scroll-margin-top: 70px;
   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
