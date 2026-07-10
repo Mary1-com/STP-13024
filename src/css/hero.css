@@ -90,15 +90,20 @@
 }
 
 .hero__star {
-  display: inline-block;
+  display: block;
+  flex-shrink: 0;
+
   width: 16px;
   height: 16px;
-  margin-left: 4px;
+  min-width: 16px;
+  min-height: 16px;
+
+  margin-left: 0;
 
   color: var(--primary);
-  fill: var(--primary);
+  fill: currentColor;
 
-  vertical-align: -2px;
+  overflow: visible;
 }
 
 .hero__stat:nth-child(1) {
@@ -114,6 +119,10 @@
 }
 
 .hero__stat-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
@@ -320,13 +329,14 @@
   }
 
   .hero__stat-value {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
     gap: 4px;
-    width: 53px;
-    /* height: 19px; */
+
+    width: auto;
+    min-width: max-content;
+
     font-weight: 700;
     font-size: 24px;
     color: var(--bg-footer);
@@ -336,6 +346,13 @@
   .hero__stat:nth-child(2),
   .hero__stat:nth-child(3) {
     width: auto;
+  }
+
+  .hero__star {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
   }
 
   .hero__stat-label {
