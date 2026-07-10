@@ -7,6 +7,10 @@
   --glass-light-angle: -45deg;
   --glass-light-opacity: 0.8;
   --burger-color: var(--text-heading);
+  --cta-green-default: #7ed321;
+  --cta-green-hover: #9fe452;
+  --cta-green-pressed: #5f9e19;
+  --cta-green-accent: #7ed321;
 }
 
 .header {
@@ -445,7 +449,7 @@ body[data-menu-open='true'] {
   padding: 0 24px;
 
   border-radius: 8px;
-  background: var(--cta-green-accent);
+  background: var(--cta-green-default);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
@@ -459,15 +463,15 @@ body[data-menu-open='true'] {
 
 .header__play:hover,
 .header__play:focus {
-  background-color: var(--glow);
+  background-color: var(--cta-green-hover);
   color: var(--text-heading);
-  border-color: var(--glow);
+  border-color: var(--cta-green-hover);
 }
 
 .header__play:active {
-  background-color: var(--primary);
+  background-color: var(--cta-green-pressed);
   color: var(--text-heading);
-  border-color: var(--primary);
+  border-color: var(--cta-green-pressed);
   transform: translateY(0);
 }
 
