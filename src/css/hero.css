@@ -96,7 +96,7 @@
     margin-left: 4px;
 
     color: var(--primary);
-    fill: currentColor;
+    fill: var(--primary);
 
     vertical-align: -2px;
   }
