@@ -89,17 +89,17 @@
   background-color:#f7f9fc;
 }
 
-  .hero__star {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 4px;
+.hero__star {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
 
-    color: var(--primary);
-    fill: var(--primary);
+  color: var(--primary);
+  fill: var(--primary);
 
-    vertical-align: -2px;
-  }
+  vertical-align: -2px;
+}
 
 .hero__stat:nth-child(1) {
   width: 77px;

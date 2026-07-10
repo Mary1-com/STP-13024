@@ -40,7 +40,23 @@
 
   line-height: 2.56;
   text-align: center;
-  color: #0b0e14;
+}
+
+.back-home:hover,
+.back-home:focus,
+.back-home__icon:hover,
+.back-home__icon:focus,
+.back-home__text:hover,
+.back-home__text:focus {
+  fill: var(--glow);
+  color: var(--glow);
+}
+
+.back-home:active,
+.back-home__icon:active,
+.back-home__text:active {
+  fill: var(--pressed);
+  color: var(--pressed);
 }
 
 .privacy-title {

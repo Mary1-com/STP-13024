@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 335px;
   margin: 0 auto;
-   background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
+  background: linear-gradient(270deg, #e1e8ed 0%, #fff 50%, #e1e8ed 100%);
 }
 
 .back-home {
@@ -41,6 +41,23 @@
   line-height: 2.56;
   text-align: center;
   color: #0b0e14;
+}
+
+.back-home:hover,
+.back-home:focus,
+.back-home__icon:hover,
+.back-home__icon:focus,
+.back-home__text:hover,
+.back-home__text:focus {
+  fill: var(--glow);
+  color: var(--glow);
+}
+
+.back-home:active,
+.back-home__icon:active,
+.back-home__text:active {
+  fill: var(--pressed);
+  color: var(--pressed);
 }
 
 .terms-title {
