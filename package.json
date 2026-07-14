@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:vercel": "vite build --base=/"
+    "build": "vite build --base=/STP-13024/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
