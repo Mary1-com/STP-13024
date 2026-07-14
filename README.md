@@ -9,7 +9,7 @@ A responsive Vite landing page for a mobile 3D puzzle game, built with HTML, CSS
 ## 🔗 Live Demo
 
 https://github.com/Mary1-com/STP-13024
-stp-13024-phi.vercel.app
+https://stp-13024-phi.vercel.app/
 
 📌 Project Overview
 
