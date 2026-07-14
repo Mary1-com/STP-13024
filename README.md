@@ -128,4 +128,4 @@ git commit -m "Update project"
 git push origin main
 👩‍💻 Developer
 
-Developer: Maryna Vinnikova
+Developers: Maryna Vinnikova and FinJex 
